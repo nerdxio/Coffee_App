@@ -1,8 +1,7 @@
-package com.example.coffeeapp
+package com.example.coffeeapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import com.example.coffeeapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,5 +12,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
     }
-    
+
 }
