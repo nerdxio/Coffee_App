@@ -1,5 +1,6 @@
 package com.example.coffeeapp.ui.fargment.onboringfragments
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +26,14 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.next.setOnClickListener {
             findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
+            onBoardingFinished()
         }
+    }
+
+    private fun onBoardingFinished(){
+        val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("Finished", true)
+        editor.apply()
     }
 }
