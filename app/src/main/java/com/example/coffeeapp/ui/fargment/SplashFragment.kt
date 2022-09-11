@@ -10,36 +10,41 @@ import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.coffeeapp.R
-import com.example.coffeeapp.databinding.FragmentSecandBinding
-import kotlinx.coroutines.GlobalScope
+
+import com.example.coffeeapp.databinding.FragmentSplashBinding
+
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 class SplashFragment : Fragment() {
-    lateinit var binding: FragmentSecandBinding
+    lateinit var binding: FragmentSplashBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
 
-        binding = FragmentSecandBinding.inflate(inflater, container, false)
+        binding = FragmentSplashBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-       runBlocking {
-           delay(2000)
-           if(onBoardingFinished()){
-               findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
-           }else{
-               findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
-           }
-       }
+
     }
 
+    override fun onResume() {
+        super.onResume()
+        lifecycleScope.launch {
+            delay(3000)
+            if(onBoardingFinished()){
+                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+            }else{
+                findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
+            }
+        }
+    }
     private fun onBoardingFinished(): Boolean{
         val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("Finished", false)
