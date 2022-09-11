@@ -1,5 +1,6 @@
 package com.example.coffeeapp.ui.fargment
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
@@ -30,9 +31,18 @@ class SplashFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
        runBlocking {
-           delay(3000)
-           findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
+           delay(2000)
+           if(onBoardingFinished()){
+               findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+           }else{
+               findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
+           }
        }
+    }
+
+    private fun onBoardingFinished(): Boolean{
+        val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        return sharedPref.getBoolean("Finished", false)
     }
 
 }
