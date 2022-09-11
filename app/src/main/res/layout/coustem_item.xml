@@ -15,17 +15,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        <TableRow
+            android:id="@+id/rate_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" >
+
+            </LinearLayout>
+        </TableRow>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/coffee_item" />
+
+        <RatingBar
+            android:id="@+id/product_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="1" />
+
+
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="0dp"
+        android:layout_width="83dp"
         android:layout_height="wrap_content"
         android:text="Cappuccion"
         android:textColor="@color/black"
@@ -36,7 +60,7 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="0dp"
+        android:layout_width="83dp"
         android:layout_height="wrap_content"
         android:text="With Choclate"
         android:textSize="10dp"
@@ -46,7 +70,7 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="0dp"
+        android:layout_width="83dp"
         android:layout_height="wrap_content"
         android:text="50$"
         android:textColor="@color/black"
@@ -55,4 +79,19 @@
         app:layout_constraintEnd_toEndOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
