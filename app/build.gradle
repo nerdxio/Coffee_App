@@ -13,7 +13,7 @@ android {
     }
     defaultConfig {
         applicationId "com.example.coffeeapp"
-        minSdk 29
+        minSdk 23
         targetSdk 29
         versionCode 1
         versionName "1.0"
@@ -65,9 +65,8 @@ dependencies {
     //Lottie
     implementation "com.airbnb.android:lottie:3.4.0"
 
-//
-//    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4'
-//    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.10'
+
+   implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
 }
 
 
