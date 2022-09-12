@@ -5,8 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.coffeeapp.R
 import com.example.coffeeapp.adapters.CoffeeHomeAdapter
 import com.example.coffeeapp.databinding.FragmentHomeBinding
 import com.example.coffeeapp.entity.CoffeeItem
@@ -42,6 +45,9 @@ class HomeFragment : Fragment() {
         binding.rvHome.layoutManager=layoutManager
 
         adapter.differ.submitList(list)
+
     }
+
+
 
 }

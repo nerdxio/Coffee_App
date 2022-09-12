@@ -1,6 +1,7 @@
 package com.example.coffeeapp.ui.fargment
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
@@ -12,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.coffeeapp.R
 
 import com.example.coffeeapp.databinding.FragmentSplashBinding
+import com.example.coffeeapp.ui.HomeActivity
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -38,8 +40,8 @@ class SplashFragment : Fragment() {
         super.onResume()
         lifecycleScope.launch {
             delay(3000)
-            if(onBoardingFinished()){
-                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+            if(onBoardingFinished()){ // may be there is an error here
+                findNavController().navigate(R.id.action_splashFragment_to_homeActivity)
             }else{
                 findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
             }
