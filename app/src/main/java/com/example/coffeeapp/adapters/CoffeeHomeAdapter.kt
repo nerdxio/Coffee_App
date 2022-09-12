@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeeapp.databinding.CoustemItemBinding
-import com.example.coffeeapp.entity.CoffeeItem
+import com.example.coffeeapp.models.coffee.CoffeeItem
 
 class CoffeeHomeAdapter : RecyclerView.Adapter<CoffeeHomeAdapter.CoffeeItemViewHolder>() {
 
