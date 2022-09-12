@@ -1,6 +1,7 @@
 package com.example.coffeeapp.ui.fargment.onboringfragments
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.coffeeapp.R
 import com.example.coffeeapp.databinding.FragmentThirdBinding
+import com.example.coffeeapp.ui.HomeActivity
 
 
 class ThirdFragment : Fragment() {
@@ -24,8 +26,8 @@ class ThirdFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.next.setOnClickListener {
-            findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
+        binding.next.setOnClickListener {  // may be there is an error here
+          findNavController().navigate(R.id.action_viewPagerFragment_to_homeActivity)
             onBoardingFinished()
         }
     }

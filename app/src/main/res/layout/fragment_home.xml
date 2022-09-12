@@ -9,7 +9,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_nav_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -204,15 +203,4 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-
-        android:id="@+id/bottom_nav_bar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-        android:background="@color/white"
-        app:cnb_menuResource="@menu/nav_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

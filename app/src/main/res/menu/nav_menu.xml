@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/nav_home"
+    <item android:id="@+id/homeFragment"
         android:icon="@drawable/ic_home"
         android:title="Home"
         app:cnb_iconColor ="#03A9F4"/>
 
-    <item android:id="@+id/nav_order"
+    <item android:id="@+id/orderFragment"
         android:icon="@drawable/ic_order"
         android:title="Order"
         app:cnb_iconColor ="#E91E63"/>
 
-    <item android:id="@+id/nav_payment"
+    <item android:id="@+id/paymentFragment"
         android:icon="@drawable/ic_baseline_payment_24"
         android:title="E-Wallet"
         app:cnb_iconColor ="#4CAF50"/>
 
-    <item android:id="@+id/nav_profile"
+    <item android:id="@+id/profileFragment"
         android:icon="@drawable/ic_person"
         android:title="Profile"
         app:cnb_iconColor ="#FFC107"/>
