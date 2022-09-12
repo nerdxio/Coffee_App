@@ -148,7 +148,7 @@
                     android:drawableLeft="@drawable/ic_baseline_coffee_24"
                     android:paddingVertical="8dp"
                     android:paddingStart="8dp"
-                    android:text="Cappuccion"
+                    android:text="Cappuccino"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -164,7 +164,7 @@
                     android:drawableLeft="@drawable/ic_baseline_emoji_food_beverage_24"
                     android:paddingVertical="8dp"
                     android:paddingStart="8dp"
-                    android:text="latte"
+                    android:text="Latte"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -178,7 +178,7 @@
                     android:drawableLeft="@drawable/ic_baseline_coffee_24"
                     android:paddingVertical="8dp"
                     android:paddingStart="8dp"
-                    android:text="Expresso"
+                    android:text="Espresso"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
