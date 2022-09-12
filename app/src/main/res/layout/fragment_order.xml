@@ -6,66 +6,217 @@
     android:layout_height="match_parent"
     android:background="#FDFDFD"
     tools:context=".ui.fargment.OrderFragment"
-    tools:ignore="SpeakableTextPresentCheck">
+    tools:ignore="SpeakableTextPresentCheck"
+    android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="28dp"
-            android:text="Checkout"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginStart="28dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="28dp"
-           app:cardCornerRadius="30dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10">
+            app:layout_constraintTop_toTopOf="parent">
 
-         <androidx.constraintlayout.widget.ConstraintLayout
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-             <TextView
-                 android:id="@+id/textView11"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_marginStart="16dp"
-                 android:layout_marginTop="16dp"
-                 android:text="Delvier to"
-                 android:textColor="@color/black"
-                 android:textSize="25sp"
-                 app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Delvier to"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-             <View
-                 android:layout_width="match_parent"
-                 android:layout_height="2dp"
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
 
-                 android:layout_marginStart="16dp"
-                 android:layout_marginTop="24dp"
-                 android:layout_marginEnd="16dp"
-                 android:background="#BFBFBF"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintHorizontal_bias="0.0"
-                 app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
-         </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#BFBFBF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="277dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/cousem_next_button"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.153"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view"
+                    app:layout_constraintVertical_bias="0.1" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/view"
+                    app:layout_constraintVertical_bias="0.224" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginBottom="43dp"
+                    android:text="Default"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="215dp"
+                    android:layout_height="13dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginBottom="17dp"
+                    android:text="Abbas El-Akkad, Al Manteqah Al Oula, Nasr City"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/cousem_next_button"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Order Summary"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.065"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.043" />
+
+                <View
+
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#BFBFBF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="334dp"
+                    android:layout_height="205dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:listitem="@layout/fragment_order_item_checkout" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 </ScrollView>
