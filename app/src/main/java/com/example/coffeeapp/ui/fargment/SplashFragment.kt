@@ -39,7 +39,7 @@ class SplashFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         lifecycleScope.launch {
-            delay(3000)
+            delay(1500)
             if(onBoardingFinished()){ // may be there is an error here
                 findNavController().navigate(R.id.action_splashFragment_to_homeActivity)
             }else{

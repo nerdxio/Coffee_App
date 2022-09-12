@@ -2,4 +2,5 @@
     <string name="app_name">Coffee App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="payment_string">Payment is the transfer of money, goods, or services in exchange for goods and services in acceptable proportions that have been previously agreed upon by all parties involved. A payment</string>
 </resources>

@@ -56,7 +56,7 @@
         android:layout_marginEnd="32dp"
         android:gravity="center"
         android:textSize="18sp"
-        android:text="Payment is the transfer of money, goods, or services in exchange for goods and services in acceptable proportions that have been previously agreed upon by all parties involved. A payment "
+        android:text="@string/payment_string"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
