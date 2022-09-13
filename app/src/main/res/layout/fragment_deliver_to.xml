@@ -240,7 +240,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:padding="4dp"
-                    android:text="parents House"
+                    android:text="Parents House"
                     android:textColor="@color/main_dark_color"
                     android:textSize="18sp"
                     android:textStyle="bold"
