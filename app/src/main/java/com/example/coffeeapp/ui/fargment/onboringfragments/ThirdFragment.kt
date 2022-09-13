@@ -27,8 +27,8 @@ class ThirdFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.next.setOnClickListener {  // may be there is an error here
-          findNavController().navigate(R.id.action_viewPagerFragment_to_homeActivity)
-            onBoardingFinished()
+          findNavController().navigate(R.id.action_viewPagerFragment_to_verificationActivity)
+         //   onBoardingFinished()
         }
     }
 

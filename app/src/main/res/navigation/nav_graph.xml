@@ -22,12 +22,17 @@
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager">
         <action
-            android:id="@+id/action_viewPagerFragment_to_homeActivity"
-            app:destination="@id/homeActivity" />
+            android:id="@+id/action_viewPagerFragment_to_verificationActivity"
+            app:destination="@id/verificationActivity" />
     </fragment>
     <activity
         android:id="@+id/homeActivity"
         android:name="com.example.coffeeapp.ui.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/verificationActivity"
+        android:name="com.example.coffeeapp.ui.VerificationActivity"
+        android:label="activity_verification"
+        tools:layout="@layout/activity_verification" />
 </navigation>

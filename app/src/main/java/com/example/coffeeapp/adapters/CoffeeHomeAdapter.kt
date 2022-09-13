@@ -6,16 +6,16 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeeapp.databinding.CoustemItemBinding
-import com.example.coffeeapp.models.coffee.CoffeeItem
+import com.example.coffeeapp.models.coffee.Coffee
 
 class CoffeeHomeAdapter : RecyclerView.Adapter<CoffeeHomeAdapter.CoffeeItemViewHolder>() {
 
     inner class CoffeeItemViewHolder(private val binding: CoustemItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: CoffeeItem) {
-
+        fun bind(item: Coffee) {
+            binding.tvCoffeeName.text = item.name
             itemView.setOnClickListener {
-                binding.tvCoffeeName.text=item.name
+
                 onItemClickListener?.also {
                     it(item)
                 }
@@ -23,12 +23,12 @@ class CoffeeHomeAdapter : RecyclerView.Adapter<CoffeeHomeAdapter.CoffeeItemViewH
         }
     }
 
-    private val differCallback = object : DiffUtil.ItemCallback<CoffeeItem>() {
-        override fun areItemsTheSame(oldItem: CoffeeItem, newItem: CoffeeItem): Boolean {
+    private val differCallback = object : DiffUtil.ItemCallback<Coffee>() {
+        override fun areItemsTheSame(oldItem: Coffee, newItem: Coffee): Boolean {
             return oldItem.name == newItem.name
         }
 
-        override fun areContentsTheSame(oldItem: CoffeeItem, newItem: CoffeeItem): Boolean {
+        override fun areContentsTheSame(oldItem: Coffee, newItem: Coffee): Boolean {
             return oldItem == newItem
         }
 
@@ -43,16 +43,16 @@ class CoffeeHomeAdapter : RecyclerView.Adapter<CoffeeHomeAdapter.CoffeeItemViewH
     }
 
     override fun onBindViewHolder(holder: CoffeeItemViewHolder, position: Int) {
-        val item: CoffeeItem = differ.currentList[position]
+        val item: Coffee = differ.currentList[position]
         holder.bind(item)
     }
 
     override fun getItemCount() = differ.currentList.size
 
     //setOnClickListener
-    private var onItemClickListener: ((CoffeeItem) -> Unit)? = null
+    private var onItemClickListener: ((Coffee) -> Unit)? = null
 
-    fun setOnItemClickListener(listener: (CoffeeItem) -> Unit) {
+    fun setOnItemClickListener(listener: (Coffee) -> Unit) {
         onItemClickListener = listener
     }
 }
