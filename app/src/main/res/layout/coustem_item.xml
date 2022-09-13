@@ -52,7 +52,7 @@
         android:id="@+id/textView8"
         android:layout_width="83dp"
         android:layout_height="wrap_content"
-        android:text="With Choclate"
+        android:text="With Chocolate"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/tv_coffee_name"
         app:layout_constraintStart_toStartOf="@+id/tv_coffee_name"

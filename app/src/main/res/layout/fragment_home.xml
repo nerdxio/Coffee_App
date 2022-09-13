@@ -152,7 +152,7 @@
                     android:paddingStart="8dp"
                     android:text=" Cappuccino "
                     android:textColor="@color/white"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -168,7 +168,7 @@
                     android:paddingStart="8dp"
                     android:text=" Latte "
                     android:textColor="@color/white"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -182,7 +182,7 @@
                     android:paddingStart="8dp"
                     android:text=" Espresso "
                     android:textColor="@color/white"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
                     android:textStyle="bold" />
 
 
