@@ -14,7 +14,7 @@
         android:layout_marginTop="34dp"
         android:layout_marginEnd="239dp"
         android:layout_marginBottom="14dp"
-        android:text="Deliver to"
+        android:text="@string/deliver"
         android:textColor="@color/main_dark_color"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:padding="4dp"
-                    android:text="Home"
+                    android:text="@string/home"
                     android:textColor="@color/main_dark_color"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -69,9 +69,9 @@
                     android:layout_marginStart="52dp"
                     android:layout_marginEnd="51dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Abbas El-Akkad, Al Manteqah Al Oula, Nasr City"
+                    android:text="@string/location"
                     android:textColor="@color/main_dark_color"
-                    android:textSize="10dp"
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -79,6 +79,7 @@
                     app:layout_constraintStart_toStartOf="@+id/imageView" />
 
                 <ImageView
+                    android:contentDescription="@string/image"
                     android:id="@+id/imageView"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -127,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:padding="4dp"
-                    android:text="My Office"
+                    android:text="@string/office"
                     android:textColor="@color/main_dark_color"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -148,6 +149,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:contentDescription="@string/image"
                     android:id="@+id/imageView2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -181,7 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="4dp"
-                    android:text="My Apartment"
+                    android:text="@string/apartment"
                     android:textColor="@color/main_dark_color"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -190,6 +192,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:contentDescription="@string/image"
                     android:id="@+id/imageView3"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -240,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:padding="4dp"
-                    android:text="Parents House"
+                    android:text="@string/house"
                     android:textColor="@color/main_dark_color"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -250,6 +253,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:contentDescription="@string/image"
                     android:id="@+id/imageView4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -305,7 +309,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:padding="4dp"
-                    android:text="My company"
+                    android:text="@string/company"
                     android:textColor="@color/main_dark_color"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -315,6 +319,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:contentDescription="@string/image"
                     android:id="@+id/imageView5"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -365,7 +370,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:padding="4dp"
-                    android:text="My villa"
+                    android:text="@string/villa"
                     android:textColor="@color/main_dark_color"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -375,6 +380,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:contentDescription="@string/image"
                     android:id="@+id/imageView6"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -434,7 +440,7 @@
             <Button
                 android:padding="16dp"
                 android:textSize="18sp"
-                android:text="Apply"
+                android:text="@string/apply"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/main_dark_color"

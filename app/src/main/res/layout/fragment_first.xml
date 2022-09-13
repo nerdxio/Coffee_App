@@ -27,7 +27,7 @@
         android:layout_marginTop="64dp"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
-        android:text="Order for Coffee"
+        android:text="@string/OrderFor"
         android:textColor="#846046"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -36,6 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
 
     <ImageView
+        android:contentDescription="@string/image"
         android:id="@+id/next"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -56,7 +57,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
-        android:text="Sometimes I stay up so late that I have my morning coffee before I go to bed. Good communication is as stimulating as black coffee, and just as hard to sleep after. Coffee is the best thing to douse the sunrise with."
+        android:text="@string/first"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

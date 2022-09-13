@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fargment.onboringfragments.MainFragment">
+    tools:context=".ui.fargment.MainFragment">
 
-    <?xml version="1.0" encoding="utf-8"?>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/mcv_image"
@@ -24,7 +22,7 @@
                 android:id="@+id/iv_movie"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/cappuccino" />
 
         </com.google.android.material.card.MaterialCardView>
@@ -44,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:elevation="2sp"
-                android:text="Cappuccino"
+                android:text="@string/cappuccino"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -59,7 +57,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="10dp"
                 android:elevation="2sp"
-                android:text="With Chocolate"
+                android:text="@string/choco"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="@id/mcv_image"
@@ -76,7 +74,7 @@
             android:backgroundTint="#6E5A4B"
             android:clickable="false"
             android:elevation="2sp"
-            android:text="⭐ 4.9 "
+            android:text="@string/star"
             android:textColor="@color/white"
             app:cornerRadius="8dp"
             app:layout_constraintBottom_toBottomOf="@id/mcv_image"
@@ -101,10 +99,10 @@
                     android:layout_width="370dp"
                     android:layout_height="70dp"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
+                    android:layout_margin="20dp"
                     android:backgroundTint="@color/silver"
                     android:clickable="false"
-                    android:text="Coffee ☕ | Chocolate 🍫 | Medium Roasted"
+                    android:text="@string/board"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     app:cornerRadius="20dp" />
@@ -115,79 +113,125 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:text="Coffee Size"
+                    android:text="@string/size"
                     android:textColor="@color/black"
-                    android:textSize="25dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center">
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Small"
-                        android:padding="15dp"
                         android:layout_margin="15dp"
-                        android:button="@color/white"
                         android:background="@drawable/radio_selector"
-                        android:textColor="@drawable/text_color"
-                        android:elevation="5dp"/>
+                        android:button="@color/white"
+                        android:elevation="5dp"
+                        android:padding="15dp"
+                        android:text="@string/small"
+                        android:textColor="@drawable/text_color" />
+
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Medium"
-                        android:padding="15dp"
                         android:layout_margin="15dp"
-                        android:button="@color/white"
                         android:background="@drawable/radio_selector"
-                        android:textColor="@drawable/text_color"
-                        android:elevation="5dp"/>
+                        android:button="@color/white"
+                        android:elevation="5dp"
+                        android:padding="15dp"
+                        android:text="@string/medium"
+                        android:textColor="@drawable/text_color" />
+
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Large"
-                        android:padding="15dp"
                         android:layout_margin="15dp"
-                        android:button="@color/white"
                         android:background="@drawable/radio_selector"
-                        android:textColor="@drawable/text_color"
-                        android:elevation="5dp"/>
+                        android:button="@color/white"
+                        android:elevation="5dp"
+                        android:padding="15dp"
+                        android:text="@string/large"
+                        android:textColor="@drawable/text_color" />
                 </RadioGroup>
 
-
                 <TextView
-                    android:id="@+id/about"
+                    android:id="@+id/Sugar"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:text="About "
+                    android:text="@string/sugar"
                     android:textColor="@color/black"
-                    android:textSize="25dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/aboutText"
+                <RadioGroup
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:text="About................"
-                    android:textColor="@color/black"
-                    android:textSize="15dp" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/white"
+                        android:elevation="5dp"
+                        android:padding="15dp"
+                        android:text="@string/zero"
+                        android:textColor="@drawable/text_color" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/white"
+                        android:elevation="5dp"
+                        android:padding="15dp"
+                        android:text="@string/one"
+                        android:textColor="@drawable/text_color" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/white"
+                        android:elevation="5dp"
+                        android:padding="15dp"
+                        android:text="@string/two"
+                        android:textColor="@drawable/text_color" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/white"
+                        android:elevation="5dp"
+                        android:padding="15dp"
+                        android:text="@string/three"
+                        android:textColor="@drawable/text_color" />
+                </RadioGroup>
+
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="370dp"
                     android:layout_height="70dp"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
+                    android:layout_margin="40dp"
                     android:backgroundTint="@color/brown"
                     android:clickable="true"
-                    android:text="Add To Cart   |   50 EGP"
+                    android:focusable="true"
+                    android:text="@string/price"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     app:cornerRadius="20dp" />
             </LinearLayout>

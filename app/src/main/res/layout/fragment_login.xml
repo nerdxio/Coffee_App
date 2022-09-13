@@ -28,9 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="25dp"
-            android:text="Login In"
+            android:text="@string/login"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -43,8 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
-
-                android:hint="Email Address" />
+                android:hint="@string/email" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -60,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
-                android:hint="Password"
+                android:hint="@string/pass"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,9 +69,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
             android:clickable="true"
-            android:text="Forgot Password ?"
+            android:focusable="true"
+            android:text="@string/fpass"
             android:textColor="@color/brown"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
 
@@ -83,7 +83,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/brown"
-            android:text="Login In"
+            android:text="@string/login"
             android:textAllCaps="false"
             app:cornerRadius="20dp" />
 
@@ -99,8 +99,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Don't have an account ?"
-                android:textSize="18dp"
+                android:text="@string/dont_have_account"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
 
@@ -109,9 +109,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:text="  Sign Up"
+                android:focusable="true"
+                android:text="@string/signup"
                 android:textColor="@color/brown"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -122,9 +123,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="OR"
+            android:text="@string/or"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
 
@@ -136,10 +137,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/white"
-            android:text="Sign In with Google"
+            android:text="@string/google"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="15dp"
+            android:textSize="15sp"
             app:cornerRadius="20dp"
             app:icon="@drawable/google"
             app:iconSize="30dp"
@@ -156,10 +157,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/white"
-            android:text="Sign In with Facebook"
+            android:text="@string/facebook"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="15dp"
+            android:textSize="15sp"
             app:cornerRadius="20dp"
             app:icon="@drawable/facebook"
             app:iconSize="30dp"
