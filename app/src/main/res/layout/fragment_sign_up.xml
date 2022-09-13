@@ -39,12 +39,12 @@
             android:layout_margin="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
-                android:hint="Email Address"
 
-                />
+                android:hint="Email Address" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -56,6 +56,7 @@
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
@@ -71,6 +72,7 @@
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
@@ -80,6 +82,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sing_up"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="30dp"
