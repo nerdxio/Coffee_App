@@ -126,35 +126,44 @@
                     android:orientation="horizontal"
                     android:layout_gravity="center">
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
                         android:text="Small"
-                        android:padding="15dp"
-                        android:layout_margin="15dp"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
                         android:button="@color/white"
                         android:background="@drawable/radio_selector"
                         android:textColor="@drawable/text_color"
-                        android:elevation="5dp"/>
+                        android:elevation="5dp"
+                        android:textSize="17dp"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
                         android:text="Medium"
-                        android:padding="15dp"
-                        android:layout_margin="15dp"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
                         android:button="@color/white"
                         android:background="@drawable/radio_selector"
                         android:textColor="@drawable/text_color"
-                        android:elevation="5dp"/>
+                        android:elevation="5dp"
+                        android:textSize="17dp"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
                         android:text="Large"
-                        android:padding="15dp"
+                        android:padding="10dp"
                         android:layout_margin="15dp"
                         android:button="@color/white"
                         android:background="@drawable/radio_selector"
                         android:textColor="@drawable/text_color"
-                        android:elevation="5dp"/>
+                        android:elevation="5dp"
+                        android:textSize="17dp"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
                 </RadioGroup>
 
 

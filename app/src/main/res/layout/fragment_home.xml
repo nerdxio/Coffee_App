@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_light_color">
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,8 +35,8 @@
 
                 <ImageView
                     android:id="@+id/im_profile_pic"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
                     android:src="@drawable/man" />
 
@@ -71,7 +71,8 @@
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                android:textStyle="bold"/>
 
             <SearchView
 
@@ -121,7 +122,8 @@
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                android:textStyle="bold"/>
 
 
             <LinearLayout
@@ -148,7 +150,7 @@
                     android:drawableLeft="@drawable/ic_baseline_coffee_24"
                     android:paddingVertical="8dp"
                     android:paddingStart="8dp"
-                    android:text="Cappuccino"
+                    android:text=" Cappuccino "
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -164,7 +166,7 @@
                     android:drawableLeft="@drawable/ic_baseline_emoji_food_beverage_24"
                     android:paddingVertical="8dp"
                     android:paddingStart="8dp"
-                    android:text="Latte"
+                    android:text=" Latte "
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -178,7 +180,7 @@
                     android:drawableLeft="@drawable/ic_baseline_coffee_24"
                     android:paddingVertical="8dp"
                     android:paddingStart="8dp"
-                    android:text="Espresso"
+                    android:text=" Espresso "
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />

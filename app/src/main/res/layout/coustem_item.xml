@@ -41,7 +41,7 @@
         android:id="@+id/tv_coffee_name"
         android:layout_width="83dp"
         android:layout_height="wrap_content"
-        android:text="Cappuccion"
+        android:text="Cappuccino"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/cardView2"
         app:layout_constraintHorizontal_bias="0.0"
