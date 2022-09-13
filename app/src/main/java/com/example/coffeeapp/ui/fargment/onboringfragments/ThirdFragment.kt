@@ -28,6 +28,7 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.next.setOnClickListener {  // may be there is an error here
           findNavController().navigate(R.id.action_viewPagerFragment_to_verificationActivity)
+            requireActivity().finish()
          //   onBoardingFinished()
         }
     }

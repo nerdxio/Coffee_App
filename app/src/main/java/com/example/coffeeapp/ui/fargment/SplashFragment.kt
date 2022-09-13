@@ -42,6 +42,7 @@ class SplashFragment : Fragment() {
             delay(1500)
             if(onBoardingFinished()){ // may be there is an error here
                 findNavController().navigate(R.id.action_splashFragment_to_homeActivity)
+                requireActivity().finish()
             }else{
                 findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
             }
