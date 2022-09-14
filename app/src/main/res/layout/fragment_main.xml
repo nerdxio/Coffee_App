@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".ui.fargment.MainFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/mcv_image"
@@ -40,7 +40,7 @@
                 android:id="@+id/cafe_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="10dp"
+                android:padding="10dp"
                 android:elevation="2sp"
                 android:text="@string/cappuccino"
                 android:textColor="@color/black"
@@ -53,7 +53,7 @@
                 android:id="@+id/tv_coffee_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               android:paddingStart="10dp"
+               android:padding="10dp"
                 android:paddingBottom="10dp"
                 android:elevation="2sp"
                 android:textStyle="bold"
