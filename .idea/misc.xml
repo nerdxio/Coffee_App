@@ -4,9 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/bg_white_rounded.xml" value="0.1" />
+        <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/cousem_next_button.xml" value="0.128" />
         <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/ic_baseline_emoji_food_beverage_24.xml" value="0.1" />
         <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/coustem_item.xml" value="0.632" />
+        <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/fragment_deliver_to.xml" value="0.1" />
         <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/fragment_home.xml" value="0.19597989949748743" />
+        <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/fragment_order.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/fragment_order_item_checkout.xml" value="0.18" />
+        <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/fragment_payment.xml" value="0.1" />
+        <entry key="..\:/Users/AYMAN/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/fragment_profile.xml" value="0.18" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable-v24/custem_rating_bar.xml" value="0.2005" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2005" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/cousem_next_button.xml" value="0.385" />
