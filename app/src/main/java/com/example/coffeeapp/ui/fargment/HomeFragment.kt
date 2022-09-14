@@ -8,8 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.viewModelFactory
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.coffeeapp.R
 import com.example.coffeeapp.adapters.CoffeeHomeAdapter
+import com.example.coffeeapp.data.local.CoffeeDatabase
 import com.example.coffeeapp.databinding.FragmentHomeBinding
 import com.example.coffeeapp.models.coffee.Coffee
 import com.example.coffeeapp.repository.CoffeeRepository
@@ -44,6 +47,8 @@ class HomeFragment : Fragment() {
 //            Coffee(" Lungo"),
 //
 //        )
+
+
         val repository = CoffeeRepository()
         val viewModelFactory = CoffeeViewModelProviderFactory(repository)
         viewModel = ViewModelProvider(this, viewModelFactory).get(CoffeeViewModel::class.java)
@@ -56,6 +61,18 @@ class HomeFragment : Fragment() {
         viewModel.coffeeLiveData.observe(viewLifecycleOwner) { list ->
 
             adapter.differ.submitList(list)
+        }
+
+        adapter.setOnItemClickListener {
+            val bundle = Bundle().apply {
+                putSerializable("coffee", it)
+            }
+            findNavController().navigate(
+                R.id.action_homeFragment_to_mainFragment,
+                bundle
+            )
+
+
         }
 
 

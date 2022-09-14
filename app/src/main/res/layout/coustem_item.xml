@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/iv_coffee"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
@@ -59,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_coffee_name" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tv_price"
         android:layout_width="83dp"
         android:layout_height="wrap_content"
         android:text="50$"
