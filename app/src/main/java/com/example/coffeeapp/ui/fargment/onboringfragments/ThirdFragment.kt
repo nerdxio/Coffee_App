@@ -29,7 +29,7 @@ class ThirdFragment : Fragment() {
         binding.next.setOnClickListener {  // may be there is an error here
           findNavController().navigate(R.id.action_viewPagerFragment_to_verificationActivity)
             requireActivity().finish()
-            onBoardingFinished()
+           // onBoardingFinished()
         }
     }
 

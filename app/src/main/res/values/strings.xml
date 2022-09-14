@@ -50,4 +50,5 @@
     <string name="cpass">Confirm Password</string>
     <string name="fast_delivery">Fast Delivery</string>
     <string name="delivery">Sometimes I stay up so late that I have my morning coffee before I go to bed.Good communication is as stimulating as black coffee, and just as hard to sleep after.Coffee is the best thing to douse the sunrise with.</string>
+    <string name="faild_to_login">Faild to login</string>
 </resources>

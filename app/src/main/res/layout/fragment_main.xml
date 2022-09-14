@@ -32,11 +32,11 @@
             android:layout_height="wrap_content"
             android:elevation="2sp"
             android:orientation="vertical"
+            android:background="#41F7EAE4"
             app:layout_constraintBottom_toBottomOf="@id/mcv_image"
             app:layout_constraintStart_toStartOf="@id/mcv_image">
 
             <TextView
-                android:background="@color/main_light_color"
                 android:id="@+id/cafe_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,7 +50,6 @@
                 app:layout_constraintStart_toStartOf="@id/mcv_image" />
 
             <TextView
-                android:background="#F7EAE4"
                 android:id="@+id/tv_coffee_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

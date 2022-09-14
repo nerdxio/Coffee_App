@@ -17,7 +17,14 @@ class SingUpViewModel : ViewModel() {
 
     fun register(user: User) {
         viewModelScope.launch {
-            _registerLiveData.value = repository.register(user).body()
+            val response = repository.register(user)
+            if (response.isSuccessful) {
+                _registerLiveData.value = repository.register(user).body()
+            }else
+            {
+
+            }
+
         }
     }
 
