@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fargment.SignUpFragment">
 
     <LinearLayout
@@ -34,60 +34,56 @@
             android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:layout_margin="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tv_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
-
-                android:hint="name" />
+                android:hint="Name" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:layout_margin="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tv_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#f8f2ec"
-                android:hint="Email"
-                 />
-
+                android:backgroundTint="@color/beige"
+                android:hint="Email" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:layout_margin="10dp"
+            app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tv_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#f8f2ec"
-                android:hint="Password"
-               />
-
+                android:backgroundTint="@color/beige"
+                android:hint="@string/pass"
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_sing_up"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_margin="30dp"
             android:backgroundTint="@color/brown"
             android:text="Sign Up"
             android:textAllCaps="false"
@@ -108,7 +104,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
             android:text="OR"
             android:textColor="@color/black"
             android:textSize="20dp"
