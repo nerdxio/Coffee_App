@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,7 +19,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/iv_movie"
+                android:id="@+id/iv_coffee_pic"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:scaleType="centerCrop"
@@ -36,30 +36,31 @@
             app:layout_constraintStart_toStartOf="@id/mcv_image">
 
             <TextView
-
+                android:background="@color/main_light_color"
                 android:id="@+id/cafe_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
                 android:elevation="2sp"
                 android:text="@string/cappuccino"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/mcv_image"
                 app:layout_constraintStart_toStartOf="@id/mcv_image" />
 
             <TextView
-
-                android:id="@+id/cafe_des"
+                android:background="#F7EAE4"
+                android:id="@+id/tv_coffee_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="10dp"
+               android:paddingStart="10dp"
+                android:paddingBottom="10dp"
                 android:elevation="2sp"
+                android:textStyle="bold"
                 android:text="@string/choco"
-                android:textColor="@color/white"
-                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@id/mcv_image"
                 app:layout_constraintStart_toStartOf="@id/mcv_image" />
 
@@ -221,6 +222,7 @@
 
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add_to_cart"
                     android:layout_width="370dp"
                     android:layout_height="70dp"
                     android:layout_gravity="center"
@@ -241,7 +243,7 @@
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floating_action_button"
+            android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -254,4 +256,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</FrameLayout>
+</ScrollView>

@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.coffeeapp.R
 import com.example.coffeeapp.databinding.ActivityHomeBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.ismaeldivita.chipnavigation.ChipNavigationBar
+
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding

@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="25dp"
-            android:text="@string/signup"
+            android:text="Sign Up"
             android:textColor="@color/black"
             android:textSize="30dp"
             android:textStyle="bold" />
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
 
-                android:hint="@string/email" />
+                android:hint="Email Address" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
-                android:hint="@string/pass"
+                android:hint="Password"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f8f2ec"
-                android:hint="@string/cpass"
+                android:hint=" Confirm Password"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -88,7 +88,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/brown"
-            android:text="@string/signup"
+            android:text="Sign Up"
             android:textAllCaps="false"
             app:cornerRadius="20dp" />
 
@@ -123,7 +123,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/white"
-            android:text="@string/google"
+            android:text="Sign Up with Google"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -143,7 +143,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="@color/white"
-            android:text="@string/facebook"
+            android:text="Sign Up with Facebook"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
