@@ -8,5 +8,6 @@ class DatabaseRepo (val db:CoffeeDatabase){
 
     fun getAllCoffee() = db.getCoffeeDao().getAllCoffees()
 
+    suspend fun deleteAll() = db.getCoffeeDao().deleteAllCoffee()
 
 }

@@ -15,7 +15,7 @@ interface CoffeeDao {
     @Query("SELECT * FROM coffee")
     fun getAllCoffees(): LiveData<List<Coffee>>
 
-    @Delete
-    suspend fun deleteCoffee(article: Coffee)
+    @Query("DELETE FROM coffee")
+    suspend fun deleteAllCoffee()
 
 }
