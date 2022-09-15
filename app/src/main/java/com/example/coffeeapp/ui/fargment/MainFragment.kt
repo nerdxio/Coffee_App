@@ -14,6 +14,8 @@ import com.example.coffeeapp.databinding.FragmentMainBinding
 import com.example.coffeeapp.repository.DatabaseRepo
 import com.example.coffeeapp.ui.viewmodel.DetailsViewModel
 import com.example.coffeeapp.ui.viewmodel.DetailsViewModelProviderFactory
+import com.example.coffeeapp.utils.Constants
+import com.example.coffeeapp.utils.Constants.Companion.TOTAL
 
 class MainFragment : Fragment() {
     val args: MainFragmentArgs by navArgs()
@@ -37,14 +39,29 @@ class MainFragment : Fragment() {
             Glide.with(this@MainFragment).load(coffee.image).into(ivCoffeePic)
             tvCoffeePrice.text = coffee.price.toString()
         }
-        val db =CoffeeDatabase.invoke(requireActivity())
+        val db = CoffeeDatabase.invoke(requireActivity())
         val repository = DatabaseRepo(db)
         val viewModelFactory = DetailsViewModelProviderFactory(repository)
         viewModel = ViewModelProvider(this, viewModelFactory).get(DetailsViewModel::class.java)
 
+        var count = 1
+
+        binding.btnUp.setOnClickListener {
+            count += 1
+            binding.totalCups.text = count.toString()
+        }
+        binding.btnDown.setOnClickListener {
+            if (count > 1) {
+                count -= 1
+            }
+            binding.totalCups.text = count.toString()
+
+        }
         binding.btnAddToCart.setOnClickListener {
             viewModel.insert(coffee)
+            TOTAL += (coffee.price?.toInt()?.times(2) ?: 0)
         }
     }
+
 
 }

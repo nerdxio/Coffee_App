@@ -1,7 +1,9 @@
 package com.example.coffeeapp.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -9,14 +11,19 @@ import com.bumptech.glide.Glide
 import com.example.coffeeapp.databinding.CoustemItemBinding
 import com.example.coffeeapp.databinding.CustemOrderItemBinding
 import com.example.coffeeapp.models.coffee.Coffee
+import com.example.coffeeapp.utils.Constants
+import com.example.coffeeapp.utils.Constants.Companion.COUNT
+import com.example.coffeeapp.utils.Constants.Companion.TOTAL
 
 class OrderAdapter : RecyclerView.Adapter<OrderAdapter.CoffeeOrderViewHolder>() {
+    var price = 0
 
     inner class CoffeeOrderViewHolder(private val binding: CustemOrderItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Coffee) {
             binding.tvNameCoffee.text = item.name
             binding.tvOrderPrice.text = item.price.toString()
+
             itemView.apply {
                 setOnClickListener {
                     onItemClickListener?.also {
@@ -25,7 +32,6 @@ class OrderAdapter : RecyclerView.Adapter<OrderAdapter.CoffeeOrderViewHolder>() 
                 }
                 Glide.with(this).load(item.image).into(binding.ivCoffeeCard)
             }
-
 
         }
     }
@@ -61,6 +67,5 @@ class OrderAdapter : RecyclerView.Adapter<OrderAdapter.CoffeeOrderViewHolder>() 
     fun setOnItemClickListener(listener: (Coffee) -> Unit) {
         onItemClickListener = listener
     }
-
 
 }

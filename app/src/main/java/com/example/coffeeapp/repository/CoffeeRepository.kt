@@ -29,7 +29,7 @@ class CoffeeRepository() {
     }
 
 
-  suspend fun register(user: User): Response<UserCereatedResponse> {
+  suspend fun register(user: User) {
        return RetrofitInstance.api.register(user)
    }
 

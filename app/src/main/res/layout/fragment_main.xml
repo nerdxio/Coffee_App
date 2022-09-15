@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fargment.MainFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -220,6 +220,43 @@
                 </RadioGroup>
 
 
+                <TextView
+                    android:id="@+id/cups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="Cups Number"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_down"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_arrow_circle_down_24" />
+
+                    <TextView
+                        android:id="@+id/total_cups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="25sp"/>
+                    <ImageView
+                        android:id="@+id/btn_up"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_baseline_arrow_circle_up_24"/>
+
+                </LinearLayout>
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_add_to_cart"
                     android:layout_width="370dp"
@@ -229,7 +266,7 @@
                     android:backgroundTint="@color/brown"
                     android:clickable="true"
                     android:focusable="true"
-                    android:text="@string/price"
+                    android:text="@string/add_to_cart"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="20sp"

@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/faild" />
+        app:lottie_rawRes="@raw/cong" />
 
     <TextView
         android:id="@+id/textView"
@@ -29,8 +29,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/faild_to_login"
-        android:textColor="@color/red"
+        android:textColor="@color/black"
+        android:text="congratulate"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Sorry ,you can not login , pls cheack your password or email and try agine!"
+        android:text="congratulate ,you are success to make a new account !"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +87,7 @@
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         android:stateListAnimator="@null"
-        android:text="Okay"
+        android:text="@string/log_in"
         android:textAllCaps="false"
         android:textColor="@android:color/holo_blue_dark"
         app:layout_constraintBottom_toBottomOf="parent"

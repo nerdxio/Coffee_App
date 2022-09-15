@@ -64,45 +64,6 @@
                 app:layout_constraintStart_toStartOf="@+id/tv_name_coffee"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name_coffee" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="40dp"
-                android:src="@drawable/ic_baseline_arrow_circle_down_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView17"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="40dp"
-                android:src="@drawable/ic_baseline_arrow_circle_up_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="40dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="1"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView11"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <View
                 android:id="@+id/view2"
                 android:layout_width="match_parent"

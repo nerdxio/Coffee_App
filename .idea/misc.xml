@@ -13,12 +13,15 @@
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/custom_dialog_background.xml" value="0.285" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/ic_baseline_payment_24.xml" value="0.268" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/ic_home.xml" value="0.268" />
+        <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/ic_minimize.xml" value="0.19" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/ic_order.xml" value="0.268" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/drawable/ic_person.xml" value="0.268" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/activity_home.xml" value="0.36041666666666666" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/activity_main.xml" value="0.3848958333333333" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/coustem_item.xml" value="1.0" />
+        <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/custem_order_item.xml" value="0.36041666666666666" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/custom_dialog_for_loin.xml" value="0.36041666666666666" />
+        <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/custom_dialog_for_sing_up.xml" value="0.36041666666666666" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/custom_dialog_layout.xml" value="0.359375" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/fragment_first.xml" value="0.3848958333333333" />
         <entry key="..\:/Users/Hassan/AndroidStudioProjects/Coffee_App/app/src/main/res/layout/fragment_home.xml" value="0.33" />

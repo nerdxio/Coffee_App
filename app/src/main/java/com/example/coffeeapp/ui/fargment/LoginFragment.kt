@@ -2,6 +2,7 @@ package com.example.coffeeapp.ui.fargment
 
 import android.app.Dialog
 import android.content.Context
+import android.graphics.drawable.InsetDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -34,16 +35,18 @@ class LoginFragment : Fragment() {
 
         dialog = Dialog(this.requireContext())
         dialog.setContentView(R.layout.custom_dialog_for_loin)
-        dialog.getWindow()?.setBackgroundDrawable(
+        val inset = InsetDrawable(
             AppCompatResources.getDrawable(
                 this.requireContext(),
                 R.drawable.custom_dialog_background
-            )
+            ), 100
+        )
+        dialog.getWindow()?.setBackgroundDrawable(
+            inset
         )
         dialog.getWindow()
             ?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         dialog.setCancelable(false) //Optional
-
         dialog.getWindow()?.getAttributes()?.windowAnimations =
             R.style.DialogAnimation //Setting the animations to dialog
 
@@ -51,27 +54,21 @@ class LoginFragment : Fragment() {
         val Cancel: Button = dialog.findViewById(R.id.btn_cancel)
 
         Okay.setOnClickListener {
-            dialog.dismiss();
+            dialog.dismiss()
         }
         Cancel.setOnClickListener {
-            dialog.dismiss();
+            dialog.dismiss()
         }
-
 
         viewModel.loginLiveData.observe(viewLifecycleOwner) {
             it.access_token?.let { it1 -> storeToken(it1) }
-
             if (it.access_token != null) {
                 //store token
-
                 findNavController().navigate(R.id.action_loginFragment2_to_homeActivity2)
             } else {
-
-                dialog.show();
-
+                dialog.show()
             }
         }
-
 
         binding.btnLoin.setOnClickListener {
             val email = binding.tvEmail.text.toString()
@@ -82,8 +79,6 @@ class LoginFragment : Fragment() {
         binding.tvSingUp.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment2_to_signUpFragment)
         }
-
-
     }
 
     fun storeToken(token: String) {
@@ -92,5 +87,4 @@ class LoginFragment : Fragment() {
         editor.putString("token", token)
         editor.apply()
     }
-
 }

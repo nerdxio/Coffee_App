@@ -20,7 +20,7 @@ interface CoffeeService {
     suspend fun loginUserGet( @Query("email") email: String, @Query("password") password : String):LoginResponse
 
     @POST("api/user/save")
-    suspend fun register( @Body userinfo: User): Response<UserCereatedResponse>
+    suspend fun register( @Body userinfo: User)
 
     @POST("api/item")
     suspend fun addItem( @Body coffee: Coffee)

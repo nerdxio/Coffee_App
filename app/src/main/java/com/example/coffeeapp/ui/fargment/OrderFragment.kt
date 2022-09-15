@@ -2,12 +2,14 @@ package com.example.coffeeapp.ui.fargment
 
 
 import android.app.Dialog
+import android.graphics.drawable.InsetDrawable
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources.getDrawable
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -20,6 +22,9 @@ import com.example.coffeeapp.databinding.FragmentOrderBinding
 import com.example.coffeeapp.repository.DatabaseRepo
 import com.example.coffeeapp.ui.viewmodel.OrderViewModel
 import com.example.coffeeapp.ui.viewmodel.OrderViewModelProviderFactory
+import com.example.coffeeapp.utils.Constants
+import com.example.coffeeapp.utils.Constants.Companion.COUNT
+import com.example.coffeeapp.utils.Constants.Companion.TOTAL
 
 
 class OrderFragment : Fragment() {
@@ -55,15 +60,21 @@ class OrderFragment : Fragment() {
             adapter.differ.submitList(it)
         })
 
+
+
+        binding.tvTotalMoney.text = TOTAL.toString()
         //Create the Dialog here
         //Create the Dialog here
         dialog = Dialog(this.requireContext())
         dialog.setContentView(R.layout.custom_dialog_layout)
-        dialog.getWindow()?.setBackgroundDrawable(
+        val inset = InsetDrawable(
             getDrawable(
                 this.requireContext(),
                 R.drawable.custom_dialog_background
-            )
+            ), 100
+        )
+        dialog.getWindow()?.setBackgroundDrawable(
+            inset
         )
         dialog.getWindow()
             ?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
@@ -79,14 +90,16 @@ class OrderFragment : Fragment() {
         //
         binding.btnOrder.setOnClickListener {
             viewModel.deleteAll()
+            TOTAL = 0
+            COUNT = 1
             dialog.show();
         }
 
-        Okay.setOnClickListener{
+        Okay.setOnClickListener {
             dialog.dismiss();
         }
 
-        Cancel.setOnClickListener{
+        Cancel.setOnClickListener {
             dialog.dismiss();
         }
     }

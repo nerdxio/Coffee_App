@@ -59,4 +59,6 @@
     <string name="faq">FAQs</string>
     <string name="handbook">Our Handbook</string>
     <string name="logout">Logout</string>
+    <string name="log_in">Log in</string>
+    <string name="add_to_cart">Add to Cart</string>
 </resources>
