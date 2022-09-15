@@ -21,7 +21,7 @@
     <string name="cappuccino">Cappuccino</string>
     <string name="latte">Latte</string>
     <string name="espresso">Espresso</string>
-    <string name="login">Login In</string>
+    <string name="login">Login </string>
     <string name="email">Email Address</string>
     <string name="pass">Password</string>
     <string name="fpass">Forgot Password ?</string>
@@ -61,4 +61,5 @@
     <string name="logout">Logout</string>
     <string name="log_in">Log in</string>
     <string name="add_to_cart">Add to Cart</string>
+    <string name="name">Name</string>
 </resources>
