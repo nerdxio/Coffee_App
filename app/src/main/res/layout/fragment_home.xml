@@ -74,41 +74,28 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout"
                 android:textStyle="bold"/>
 
-            <SearchView
 
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
                 android:id="@+id/searchView"
                 android:layout_width="350dp"
+                android:elevation="8dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="12dp"
-                android:background="@drawable/bg_white_rounded"
-                app:layout_constraintBottom_toTopOf="@+id/cardView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/textView2" >
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="24dp"
-                android:elevation="10dp"
-                app:cardCornerRadius="30dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/searchView">
-
-                <ImageView
-                    android:layout_width="match_parent"
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_v"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/coffee_cardview"
-
+                    app:queryHint="Search Here ..."
+                    app:iconifiedByDefault="false"
                     />
             </androidx.cardview.widget.CardView>
 
@@ -117,13 +104,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="28dp"
-                android:layout_marginTop="8dp"
                 android:text="@string/categories"
                 android:textColor="@color/black"
                 android:textSize="25sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView"
-                android:textStyle="bold"/>
+                app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
 
             <LinearLayout
@@ -190,7 +176,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_home"
                 android:layout_width="0dp"
-                android:layout_height="275dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="24dp"

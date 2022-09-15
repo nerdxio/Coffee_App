@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
@@ -37,16 +38,6 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        var list = listOf(
-//            Coffee("Robusta"),
-//            Coffee("Americano"),
-//            Coffee("Espresso"),
-//            Coffee("Doppio"),
-//            Coffee("Cortado"),
-//            Coffee("Galão"),
-//            Coffee(" Lungo"),
-//
-//        )
 
 
         val repository = CoffeeRepository()
@@ -71,12 +62,29 @@ class HomeFragment : Fragment() {
                 R.id.action_homeFragment_to_mainFragment,
                 bundle
             )
-
-
         }
 
+        binding.searchV.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                TODO("Not yet implemented")
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+
+                fillterList(newText)
+              return true
+            }
+
+        })
 
     }
+   fun fillterList(text:String?){
 
+       val list = adapter.differ.currentList.filter { coffee ->
+           coffee.name?.contains(text!!) == true
+       }
+       adapter.differ.submitList(list)
+
+   }
 
 }

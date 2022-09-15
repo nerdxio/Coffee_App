@@ -154,7 +154,7 @@
                     app:iconSize="30dp"
                     app:iconTint="@color/brown"/>
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/list_item6"
+                    android:id="@+id/btn_log_out"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="16dp"

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.example.coffeeapp.R
@@ -38,6 +39,7 @@ class MainFragment : Fragment() {
         binding.apply {
             Glide.with(this@MainFragment).load(coffee.image).into(ivCoffeePic)
             tvCoffeePrice.text = coffee.price.toString()
+            cafeName.text=coffee.name
         }
         val db = CoffeeDatabase.invoke(requireActivity())
         val repository = DatabaseRepo(db)
@@ -60,6 +62,10 @@ class MainFragment : Fragment() {
         binding.btnAddToCart.setOnClickListener {
             viewModel.insert(coffee)
             TOTAL += (coffee.price?.toInt()?.times(2) ?: 0)
+        }
+
+        binding.btnBack.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_homeFragment)
         }
     }
 
