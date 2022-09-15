@@ -10,8 +10,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/cong" />
+        app:lottie_rawRes="@raw/cong2" />
 
     <TextView
         android:id="@+id/textView"
