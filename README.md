@@ -2,6 +2,7 @@
 #### Tools and Technology  
 > I used in this app modern android component and libery 
 > - Kotlin - As a programming language.
+> - LiveData
 > - Coroutines - For multithreading while handling requests to the server and local database.
 > - Model-View-ViewModel(MVVM) - Offers an implementation of observer design pattern.
 > - Navigation Component - To handle app navigation.
